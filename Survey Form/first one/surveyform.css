@@ -1,0 +1,142 @@
+/* general */
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  
+  background-image: linear-gradient(
+    180deg, 
+    rgba(255,98,137, 0.8),
+    rgba(255,147,172, 0.7)
+    ), url(https://cdn.oneesports.gg/cdn-data/2022/10/MLBB_TheExorcists_skins.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: block;
+}
+
+fieldset {
+  border: none;
+  margin: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end general */
+
+/* title */
+
+.title-container {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#description {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* end title */
+
+/* survey main */
+
+.survey {
+  width: 600px;
+  padding: 10px 5px;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 8, 74, 0.8);
+  font-size: 20px;
+  text-align: left;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  padding: 5px 10px;
+
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  color: gray;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* end main */
+
+/* media quary */
+
+@media (max-width: 770px) {
+  body {
+    font-size: small;
+  }
+
+  .survey {
+    width: 600px;
+    margin: 20px;
+  }
+}

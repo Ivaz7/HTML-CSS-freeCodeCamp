@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ivazreza" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <link rel="stylesheet" href="TechDoc.css">
+  <title>Techniacal Document Page</title>
+</head>
+<body>
+  <div class="navbar">
+    <nav id="navbar">
+      <header class="title-page">
+        HTML Basic
+      </header>  
+
+      <div class="nav-container">
+        <div>
+          <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#What_is_HTML?">What is HTML?</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#Nesting_elements">Nesting elements</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#Void_elements">Void elements</a>
+        </div>
+        
+        <div> 
+          <a class="nav-link" href="#Attributes">Attributes</a>
+        </div>
+        
+        <div>
+          <a class="nav-link" href="#Boolean_attributes">Boolean attributes</a>
+        </div>      
+  
+        <div>
+          <a class="nav-link" href="#Omitting_quotes_around_attribute_values">Omitting quotes around attribute values</a>
+        </div>   
+  
+        <div>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </div>  
+      </div>
+    </nav>
+  </div>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>
+        Introduction to HTML
+      </header>
+
+      <p>
+        At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header id="Javascript_and_Java"? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+      </p>
+    </section>
+    
+    <section class="main-section" id="Prerequisites">
+      <header>
+        Prerequisites
+      </header>
+
+      <p>
+        Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). Both are parts of our Getting started with the web complete beginner's module.
+      </p>
+    </section>
+    
+    <section class="main-section" id="What_is_HTML?">
+      <header>
+        What is HTML?
+      </header>
+
+      <p>
+        HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:
+      </p>
+
+      <code>
+        My cat is very grumpy
+      </code>
+
+      <p>
+        If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (&lt;p&gt;) element:
+      </p>
+
+      <code>
+        &lt;p&gt;My cat is very grumpy&lt;/p&gt;
+      </code>
+    </section>
+       
+    <section class="main-section" id="Anatomy_of_an_HTML_element">
+      <header>
+        Anatomy of an HTML element
+      </header>
+
+      <p>
+        Let's further explore our paragraph element from the previous section:
+      </p>
+
+      <p>
+        The anatomy of our element is:
+      </p>
+
+      <ul>
+        <li>
+          The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+        </li>
+
+        <li>
+          The content: This is the content of the element. In this example, it is the paragraph text.
+        </li>
+
+        <li>
+          The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+        </li>
+      </ul>
+
+      <p>
+        The element is the opening tag, followed by content, followed by the closing tag.
+      </p>
+    </section>
+    
+    <section class="main-section" id="Nesting_elements">
+      <header>
+        Nesting elements
+      </header>
+
+      <p>
+        Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:
+      </p>
+
+      <code>
+        &lt;p&gt;My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
+      </code>
+
+      <p>
+        There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p.
+      </p>
+    </section>
+    
+    <section class="main-section" id="Void_elements">
+      <header>
+        Void elements
+      </header>
+
+      <p>
+        Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document. Such elements are called void elements. For example, the &lt;img&gt; element embeds an image file onto a page:
+      </p>
+
+      <code>
+        &lt;img
+        src=&quot;https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg&quot;
+        alt=&quot;troll face&quot; /&gt;
+      </code>
+
+      <p>
+        This would output the following:
+      </p>
+
+      <img class="cat-img" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat face" >
+    </section>
+    
+    <section class="main-section" id="Attributes">
+      <header>
+        Attributes
+      </header>
+
+      <p>
+        Elements can also have attributes. Attributes look like this:
+      </p>
+
+      <code>
+        &lt;div attribute=&quot;values of the atrribute&quot; &lt;/div&gt;
+      </code>
+
+      <p>
+        Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.
+      </p>
+
+      <p>
+        An attribute should have:
+      </p>
+
+      <ul>
+        <li>
+          A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
+        </li>
+
+        <li>
+          The attribute name, followed by an equal sign.
+        </li>
+
+        <li>
+          An attribute value, wrapped with opening and closing quote marks.
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Boolean_attributes">
+      <header>
+        Boolean attributes
+      </header>
+
+      <p>
+        Sometimes you will see attributes written without values. This is entirely acceptable. These are called Boolean attributes. Boolean attributes can only have one value, which is generally the same as the attribute name. For example, consider the disabled attribute, which you can assign to form input elements. (You use this to disable the form input elements so the user can't make entries. The disabled elements typically have a grayed-out appearance.) For example:
+      </p>
+
+      <code>
+        &lt;input type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
+      </code>
+    </section>
+    
+    <section class="main-section" id="Omitting_quotes_around_attribute_values">
+      <header>
+        Omitting quotes around attribute values
+      </header>
+
+      <p>
+        If you look at code for a lot of other sites, you might come across a number of strange markup styles, including attribute values without quotes. This is permitted in certain circumstances, but it can also break your markup in other circumstances. The element in the code snippet below, &lt;a&gt;, is called an anchor. Anchors enclose text and turn them into links. The href attribute specifies the web address the link points to. You can write this basic version below with only the href attribute, like this:
+      </p>
+
+      <code>
+        &lt;a href=https://www.mozilla.org/&gt;favorite website&lt;/a&gt;
+      </code>
+    </section>    
+
+    <section class="main-section" id="Reference">
+      <header>
+        Reference
+      </header>
+
+      <p>
+        All the documentation in this page is taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN
+      </p>
+    </section>
+  </main>
+</body>
+</html>

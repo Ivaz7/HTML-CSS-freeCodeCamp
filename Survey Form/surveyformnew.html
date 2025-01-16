@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ivazreza" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLBB survey form exercize</title>
+  <link rel="stylesheet" href="surveyformnew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">
+      MLBB Rank Match Survey Form
+    </h1>
+    
+    <p id="description">
+      Thank you for taking the time to help us improve the MLBB Rank experience
+    </p>
+  </header>
+  
+  <main class="container">
+    <form id="survey-form">
+
+      <!-- Top Personal info -->
+
+      <div class="personal-info">
+        <div>
+          <label for="name" id="name-label" placeholder="name">
+            Nickname
+          </label>
+
+          <input name="name" id="name" placeholder="Nickname type here" required type="text">
+        </div>
+
+        <div>
+          <label for="email" id="email-label" placeholder="email">
+            Email
+          </label>
+
+          <input name="email" id="email" placeholder="Please enter your email here" required type="email">
+        </div>
+
+        <div>
+          <label for="number" id="number-label">
+            Age
+          </label>
+
+          <input name="number" id="number" placeholder="Enter your Age here" required type="number" min="13" max="150">
+        </div>
+      </div>
+
+      <!-- end of personal info -->
+
+      <!-- dropdown -->
+
+      <div id="dropdown-container" class="dropdown">
+        <label for="select" id="dropdown-label">
+          How satisfying is MLBB Rank experience at this point?
+        </label>
+
+        <select name="select" id="dropdown">
+          <option value="" disabled selected>Select and Click One Here</option>
+          <option value="1">Excellent(5/5)</option>
+          <option value="2">Great(4/5)</option>
+          <option value="3">Good(3/5)</option>
+          <option value="4">Bad(2/5)</option>
+          <option value="5">Horrible(1/5)</option>
+        </select>
+      </div>
+
+      <!-- end of dropdown -->
+
+      <!-- radio button -->
+
+      <div id="radio-button">
+        <legend>
+          Which option your current rank right now
+        </legend>
+
+        <div class="selection-container">
+          <label>
+            <input name="rank" value="1" type="radio" checked>
+
+            <div>
+              Above Mythic(Mythic Honor, Mythic Glory, Mythic Immortal)
+            </div>
+          </label>
+
+          <label>
+            <input name="rank" value="2" type="radio">
+
+            <div>
+              Mythic
+            </div>
+          </label>
+
+          <label>
+            <input name="rank" value="3" type="radio">
+
+            <div>
+              Below Mythic(Legend, Epic, Grandmaster, etc)
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- end of radio button -->
+
+      <!-- checkbox button -->
+
+      <div id="checkbox">
+        <legend class="checkbox">
+          What would you like to see improved?
+        </legend>
+
+        <div class="selection-container">
+          <label>
+            <input name="checkbox" value="1" type="checkbox" required>
+
+            <div>
+              Rank matching
+            </div>
+          </label>
+
+          <label>
+            <input name="checkbox" value="2" type="checkbox" required>
+
+            <div>
+              Balancing Hero
+            </div>
+          </label>
+
+          <label>
+            <input name="checkbox" value="3" type="checkbox" required>
+
+            <div>
+              Gameplay
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- end of checkbox button -->
+
+      <!-- textarea -->
+
+      <div id="textarea" class="textarea-container">
+        <legend>
+          More suggestions down below
+        </legend>
+
+        <textarea maxlength="500"></textarea>
+      </div>
+
+      <!-- end of textarea -->
+
+      <!-- submit -->
+
+      <input id="submit" type="submit">
+
+      <!-- end of submit -->
+    </form>
+  </main>
+</body>
+
+</html>

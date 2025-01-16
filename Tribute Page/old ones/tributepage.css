@@ -1,0 +1,91 @@
+header {
+  text-align: center;
+  background-color: rgb(234, 234, 234);
+  color: rgb(75, 75, 75);
+  padding: 1px;
+  font-family: tahoma, sans serif;
+}
+
+header>h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+header>p {
+  font-size: 15px;
+  font-style: italic;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.image {
+  width: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: auto;
+}
+
+section {
+  color: rgb(75, 75, 75);
+  background-color: rgb(234, 234, 234);
+  font-size: 15px;
+  font-family: tahoma, sans-serif
+}
+
+legend {
+  text-align: center;
+  font-size: 30px;
+  font-family: tahoma;
+  font-weight: 900;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+section>ul>li {
+  margin: 10px auto;
+  width: 65%;
+}
+
+section>ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-block: 0;
+  text-align: justify;
+}
+
+li {
+  padding: 10px 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+span {
+  display: inline;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: tahoma, sans-serif;
+  width: 65%;
+  display: block;
+  margin: 40px auto;
+}
